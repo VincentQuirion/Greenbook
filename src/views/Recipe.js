@@ -34,8 +34,7 @@ class Recipe extends React.Component {
       items.push(
         <Button
         color="green"
-        href="#pablo"
-        size="sm">
+        href="#pablo">
             {this.state.list[i]}
         </Button>
       );
@@ -76,7 +75,12 @@ class Recipe extends React.Component {
             <Container>
               <Card className="card-profile shadow mt--300">
                 <div className="px-4">
-                  <Row className="justify-content-center">
+                  <div className="text-center mt-5">
+                    <h3>
+                      Jessica Jones{" "}
+                    </h3>
+                    <br/>
+                    <Row className="justify-content-center">
                     <Col
                       className="order-lg-3 text-lg-right align-self-lg-center"
                       lg="4"
@@ -124,12 +128,9 @@ class Recipe extends React.Component {
                       </div>
                     </Col>
                   </Row>
-                  <div className="text-center mt-5">
                     <img src={Recipe_Img} width="600px"/>
-                    <h3>
-                        <br/>
-                      Jessica Jones{" "}
-                    </h3>
+                    <br/>
+                    <br/>
                     {items}
                   </div>
                   <div className="mt-5 py-5 border-top text-center">
