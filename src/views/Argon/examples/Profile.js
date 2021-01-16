@@ -93,7 +93,7 @@ class Profile extends React.Component {
                           onClick={e => e.preventDefault()}
                           size="sm"
                         >
-                          Connect
+                          Follow
                         </Button>
                         <Button
                           className="float-right"
@@ -102,7 +102,7 @@ class Profile extends React.Component {
                           onClick={e => e.preventDefault()}
                           size="sm"
                         >
-                          Message
+                          Share Profile
                         </Button>
                       </div>
                     </Col>
@@ -110,15 +110,15 @@ class Profile extends React.Component {
                       <div className="card-profile-stats d-flex justify-content-center">
                         <div>
                           <span className="heading">22</span>
-                          <span className="description">Friends</span>
+                          <span className="description">Followers</span>
                         </div>
                         <div>
                           <span className="heading">10</span>
-                          <span className="description">Photos</span>
+                          <span className="description">Following</span>
                         </div>
                         <div>
                           <span className="heading">89</span>
-                          <span className="description">Comments</span>
+                          <span className="description">Stars</span>
                         </div>
                       </div>
                     </Col>
@@ -126,19 +126,18 @@ class Profile extends React.Component {
                   <div className="text-center mt-5">
                     <h3>
                       Jessica Jones{" "}
-                      <span className="font-weight-light">, 27</span>
                     </h3>
                     <div className="h6 font-weight-300">
                       <i className="ni location_pin mr-2" />
-                      Bucharest, Romania
+                      Ottawa, Canada
                     </div>
                     <div className="h6 mt-4">
                       <i className="ni business_briefcase-24 mr-2" />
-                      Solution Manager - Creative Tim Officer
+                      I like food, and the planet !
                     </div>
                     <div>
                       <i className="ni education_hat mr-2" />
-                      University of Computer Science
+                      1.2 tons of CO2 saved (top 24% users)
                     </div>
                   </div>
                   <div className="mt-5 py-5 border-top text-center">
