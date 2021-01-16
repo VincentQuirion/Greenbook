@@ -79,6 +79,12 @@ class Search extends React.Component {
         });
     }
 
+    // Used to manage enter keypresses and future AJAX
+    handleKeyPress = (event) => {
+        if(event.key === 'Enter'){
+            this.addItem(event);
+        }}
+
     render() {
         return (
             <>
@@ -113,10 +119,10 @@ class Search extends React.Component {
                         </div>
                     </section>
                     <section className="Search-bar">
-                        <Form className="form" id="addItemForm" style={{textAlign: "center",
+                        <Form onSubmit={() => {return false;}} className="form" id="addItemForm" style={{textAlign: "center",
                                                                         padding:"5px"}}>
 
-                            <FormGroup style={{margin: "0vw 20vw 0vw"}}>
+                            <FormGroup onKeyPress={this.handleKeyPress} style={{margin: "0vw 20vw 0vw"}}>
                             <InputGroup className="mb-4">
                                 <InputGroupAddon addonType="prepend">
                                     <InputGroupText>
@@ -134,7 +140,8 @@ class Search extends React.Component {
                         <ul style={{display: "flex", flexWrap:"wrap",
                                         flexFlow: "row wrap",
                                         justifyContent: "space-around",
-                                        margin: "2vh 2.5vw"}}>
+                                        margin: "2vh 2.5vw",
+                                        listStyleType: "none"}}>
                             {this.state.list.map(item => (
                                 <li key={item} style={{marginRight: 30, marginBottom:15}}>
                                     <Button color="secondary" size="lg" type="button">
@@ -181,6 +188,10 @@ class Search extends React.Component {
                     </section>
                 </main>
                 <SimpleFooter />
+                <script>
+                    //addEventListener
+                    document.getElementByTag('a').addEventListener('click', onClickHandler);
+                </script>
             </>
         );
     }
