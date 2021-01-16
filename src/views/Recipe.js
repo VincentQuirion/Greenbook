@@ -10,12 +10,36 @@ import SimpleFooter from "../components/Footers/SimpleFooter.js";
 import Recipe_Img from "../assets/img/theme//img-1-1200x1000.jpg";
 
 class Recipe extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            list: [
+            "Flour",
+                "Salt",
+                "Pepper",
+                "Milk",
+            ]
+        }
+    }
+
   componentDidMount() {
     document.documentElement.scrollTop = 0;
     document.scrollingElement.scrollTop = 0;
     this.refs.main.scrollTop = 0;
   }
   render() {
+    const items = [];
+
+    for (var i = 0; i < this.state.list.length; i++) {
+      items.push(
+        <Button
+        color="green"
+        href="#pablo"
+        size="sm">
+            {this.state.list[i]}
+        </Button>
+      );
+    }
     return (
       <>
         <DemoNavbar />
@@ -65,16 +89,25 @@ class Recipe extends React.Component {
                           onClick={e => e.preventDefault()}
                           size="sm"
                         >
-                          Follow
+                         Save
                         </Button>
                         <Button
-                          className="float-right"
-                          color="default"
+                          className="mr-4"
+                          color="info"
                           href="#pablo"
                           onClick={e => e.preventDefault()}
                           size="sm"
                         >
-                          Share Profile
+                         Like
+                        </Button>
+                        <Button
+                          className="mr-4"
+                          color="info"
+                          href="#pablo"
+                          onClick={e => e.preventDefault()}
+                          size="sm"
+                        >
+                         Unlike
                         </Button>
                       </div>
                     </Col>
@@ -82,35 +115,22 @@ class Recipe extends React.Component {
                       <div className="card-profile-stats d-flex justify-content-center">
                         <div>
                           <span className="heading">22</span>
-                          <span className="description">Followers</span>
+                          <span className="description">Likes</span>
                         </div>
                         <div>
                           <span className="heading">10</span>
-                          <span className="description">Following</span>
-                        </div>
-                        <div>
-                          <span className="heading">89</span>
-                          <span className="description">Stars</span>
+                          <span className="description">Unlikes</span>
                         </div>
                       </div>
                     </Col>
                   </Row>
                   <div className="text-center mt-5">
+                    <img src={Recipe_Img} width="600px"/>
                     <h3>
+                        <br/>
                       Jessica Jones{" "}
                     </h3>
-                    <div className="h6 font-weight-300">
-                      <i className="ni location_pin mr-2" />
-                      Ottawa, Canada
-                    </div>
-                    <div className="h6 mt-4">
-                      <i className="ni business_briefcase-24 mr-2" />
-                      I like food, and the planet !
-                    </div>
-                    <div>
-                      <i className="ni education_hat mr-2" />
-                      1.2 tons of CO2 saved (top 24% users)
-                    </div>
+                    {items}
                   </div>
                   <div className="mt-5 py-5 border-top text-center">
                     <Row className="justify-content-center">
