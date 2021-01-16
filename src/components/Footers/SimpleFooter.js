@@ -1,21 +1,3 @@
-/*!
-
-=========================================================
-* Argon Design System React - v1.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/argon-design-system-react
-* Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/argon-design-system-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
-/*eslint-disable*/
 import React from "react";
 // reactstrap components
 import {
@@ -87,7 +69,7 @@ class SimpleFooter extends React.Component {
                 <UncontrolledTooltip delay={0} target="tooltip829810202">
                   Follow us
                 </UncontrolledTooltip>
-                <Button
+                {/* <Button
                   className="btn-icon-only rounded-circle ml-1"
                   color="github"
                   href="https://github.com/creativetimofficial"
@@ -97,10 +79,10 @@ class SimpleFooter extends React.Component {
                   <span className="btn-inner--icon">
                     <i className="fa fa-github" />
                   </span>
-                </Button>
-                <UncontrolledTooltip delay={0} target="tooltip495507257">
+                </Button> */}
+                {/* <UncontrolledTooltip delay={0} target="tooltip495507257">
                   Star on Github
-                </UncontrolledTooltip>
+                </UncontrolledTooltip> */}
               </Col>
             </Row>
             <hr />
@@ -112,7 +94,7 @@ class SimpleFooter extends React.Component {
                     href="https://www.creative-tim.com?ref=adsr-footer"
                     target="_blank"
                   >
-                    Creative Tim
+                    GreenBook
                   </a>
                   .
                 </div>
@@ -124,7 +106,7 @@ class SimpleFooter extends React.Component {
                       href="https://www.creative-tim.com?ref=adsr-footer"
                       target="_blank"
                     >
-                      Creative Tim
+                      GreenBook
                     </NavLink>
                   </NavItem>
                   <NavItem>
