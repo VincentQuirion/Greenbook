@@ -185,6 +185,12 @@ class Search extends React.Component {
                                 </li>
                             ))}
                         </ul>
+                        <section id="mission">
+
+                        </section>
+                        <section id="howitworks">
+
+                        </section>
                     </section>
                 </main>
                 <SimpleFooter />
