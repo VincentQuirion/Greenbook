@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import App from "./App";
 import Profile from "./views/Argon/examples/Profile";
 import Search from "./views/Search";
+import Login from "./views/Login"
 
 // import {Homepage, Profile} from './App';
 
@@ -14,6 +15,7 @@ ReactDOM.render(
             <Route exact path="/" component={App}/>
             <Route exact path="/profile/" component={Profile}/>
             <Route exact path="/search/" component={Search}/>
+            <Route exact path="/Login/" component={Login}/>
         </Switch>
     </Router>,
     document.getElementById('root')

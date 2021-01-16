@@ -28,6 +28,7 @@ function App() {
         </a>
         <Link to="profile">test profile</Link>
         <Link to="search">test search</Link>
+        <Link to="Login">test Login</Link>
       </header>
     </div>
   );
