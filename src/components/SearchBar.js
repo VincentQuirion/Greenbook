@@ -13,11 +13,13 @@ import {
     UncontrolledTooltip
 } from "reactstrap";
 
+import axios from "axios";
+
 class SearchBar extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            list : []
+            list : props.startIngredients
         }
     }
 
@@ -38,6 +40,10 @@ class SearchBar extends React.Component {
             this.setState({
                 list: list
             });
+
+            // Backend stuff
+            this.props.changeHandler();
+
             // Finally, we need to reset the form
             newItem.classList.remove("is-danger");
             form.reset();
