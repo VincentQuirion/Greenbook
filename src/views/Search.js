@@ -95,7 +95,7 @@ class Search extends React.Component {
                 <DemoNavbar />
                 <main className="search-page" ref="main">
                     <section className="logo" style={{display:"flex", justifyContent:"center"}}>
-                        <img src={GreenbookLogo}/>
+                        <img style={{width: "75%", heigth: "auto"}} src={GreenbookLogo}/>
                     </section>
                     <section className="Search-bar">
                         <Form onSubmit={() => {return false;}} className="form" id="addItemForm" style={{textAlign: "center",
