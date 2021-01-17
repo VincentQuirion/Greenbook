@@ -7,6 +7,7 @@ import Profile from "./views/Argon/examples/Profile";
 import Search from "./views/Search";
 import Login from "./views/Argon/examples/Login"
 import Recipe from "./views/Recipe";
+import Upload from "./views/Upload";
 // import {Homepage, Profile} from './App';
 
 ReactDOM.render(
@@ -17,6 +18,7 @@ ReactDOM.render(
             <Route exact path="/search/" component={Search}/>
             <Route exact path="/Login/" component={Login}/>
             <Route exact path="/Recipe/" component={Recipe}/>
+            <Route exact path="/Upload/" component={Upload}/>
         </Switch>
     </Router>,
     document.getElementById('root')

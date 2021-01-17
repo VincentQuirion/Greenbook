@@ -30,6 +30,7 @@ function App() {
         <Link to="search">test search</Link>
         <Link to="Login">test Login</Link>
         <Link to="Recipe">test Recipe</Link>
+        <Link to="Upload">test Upload</Link>
       </header>
     </div>
   );
