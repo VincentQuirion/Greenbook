@@ -170,6 +170,20 @@ class Search extends React.Component {
                         <section id="howitworks">
 
                         </section>
+                        <div>
+                        <h1 style={{textAlign: "center", fontSize:"70px"}}>How it works</h1>
+                        <p style={{textAlign: "center", fontSize:"15px", fontWeight: 'bold'}}>
+                            text here
+                        </p>
+                        <br/>
+                    </div>
+                    <div>
+                        <h1 style={{textAlign: "center", fontSize:"70px"}}>Our mission</h1>
+                        <p style={{textAlign: "center", fontSize:"15px", fontWeight: 'bold'}}>
+                            text here
+                        </p>
+                        <br/>
+                    </div>
                     </section>
                 </main>
                 <SimpleFooter />
