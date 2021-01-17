@@ -20,16 +20,17 @@ import SimpleFooter from "../components/Footers/SimpleFooter.js";
 import GreenbookLogo from "./../assets/img/Greenbook.png";
 
 import GbBackground from "./../assets/img/gb_background.png";
+import axios from "axios";
 
 class Search extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             list: [
-            "Flour",
-                "Salt",
-                "Pepper",
-                "Milk",
+            // "Flour",
+            //     "Salt",
+            //     "Pepper",
+            //     "Milk",
             ]
         }
     }
@@ -56,6 +57,16 @@ class Search extends React.Component {
             this.setState({
                 list: list
             });
+
+            // Backend Communication
+            const url = "http://127.0.0.1:8000/index.php/";
+            console.log(list);
+            axios.post(url, list)
+            .then(res=>console.log(res.data))
+            .catch(err=>console.log(err));
+
+
+
             // Finally, we need to reset the form
             newItem.classList.remove("is-danger");
             form.reset();
@@ -73,6 +84,13 @@ class Search extends React.Component {
             if (el === item) {
                 // If item matches, remove it from array
                 list.splice(i, 1);
+
+
+                // Backend Communication
+                const url = "http://127.0.0.1:8000/index.php/";
+                axios.post(url, list)
+                .then(res=>console.log(res.data))
+                .catch(err=>console.log(err));
                 return true;
             }
         });
