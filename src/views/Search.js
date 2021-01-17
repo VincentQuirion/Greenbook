@@ -95,7 +95,7 @@ class Search extends React.Component {
                 <DemoNavbar />
                 <main className="search-page" ref="main">
                     <section className="logo" style={{display:"flex", justifyContent:"center"}}>
-                        <img src={GreenbookLogo}/>.
+                        <img src={GreenbookLogo}/>
                     </section>
                     <section className="Search-bar">
                         <Form onSubmit={() => {return false;}} className="form" id="addItemForm" style={{textAlign: "center",
@@ -118,8 +118,8 @@ class Search extends React.Component {
                         </Form>
                         <ul style={{display: "flex", flexWrap:"wrap",
                                         flexFlow: "row wrap",
-                                        justifyContent: "space-around",
-                                        margin: "2vh 2.5vw",
+                                        justifyContent: "center",
+                                        margin: "2vh 3vw",
                                         listStyleType: "none"}}>
                             {this.state.list.map(item => (
                                 <li key={item} style={{marginRight: 30, marginBottom:15}}>
@@ -133,7 +133,7 @@ class Search extends React.Component {
                                         size="sm"
                                         type="button"
                                     >
-                                        <i className="ni ni-calendar-grid-58"></i>
+                                        <i className="ni ni-calendar-grid-58"/>
                                     </Button>
                                     <UncontrolledTooltip
                                         delay={0}
@@ -152,7 +152,7 @@ class Search extends React.Component {
 
                                         onClick={() => this.removeItem(item)}
                                     >
-                                        <i className="ni ni-fat-remove"></i>
+                                        <i className="ni ni-fat-remove"/>
                                     </Button>
                                     <UncontrolledTooltip
                                         delay={0}

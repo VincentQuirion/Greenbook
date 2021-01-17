@@ -23,6 +23,8 @@ import SimpleFooter from "../../../components/Footers/SimpleFooter.js";
 
 import googleIcon from "../../../assets/img/icons/common/google.svg";
 
+import GreenbookLogo from "./../../../assets/img/Greenbook.png";
+
 class Login extends React.Component {
   componentDidMount() {
     document.documentElement.scrollTop = 0;
@@ -34,18 +36,9 @@ class Login extends React.Component {
       <>
         <DemoNavbar />
         <main ref="main">
-          <section className="section section-shaped section-lg">
-            <div className="shape shape-style-1 bg-gradient-default">
-              <span />
-              <span />
-              <span />
-              <span />
-              <span />
-              <span />
-              <span />
-              <span />
-            </div>
-            <Container className="pt-lg-7">
+          <section className="section section-shaped section-sm">
+            <img src={GreenbookLogo} style={{display: "block", marginLeft: "auto", marginRight: "auto", height: "10vh", width:"auto"}}/>
+            <Container className="pt-sm">
               <Row className="justify-content-center">
                 <Col lg="5">
                   <Card className="bg-secondary shadow border-0">
@@ -66,7 +59,7 @@ class Login extends React.Component {
                               src={googleIcon}
                             />
                           </span>
-                          <span className="btn-inner--text">Google</span>
+                          <span className="btn-inner--text text-default">Google</span>
                         </Button>
                       </div>
                     </CardHeader>
@@ -115,7 +108,7 @@ class Login extends React.Component {
                         <div className="text-center">
                           <Button
                             className="my-4"
-                            color="primary"
+                            color="success"
                             type="button"
                           >
                             Sign in
