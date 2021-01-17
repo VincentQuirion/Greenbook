@@ -22,7 +22,7 @@ import {
 } from "reactstrap";
 
 import argonReactWhite from "../../assets/img/brand/argon-react-white.png";
-import greenbook_white from "../../assets/img/GreenbookLogoWhite.png"
+import greenbook_white from "../../assets/img/GreenbookWhite.png"
 
 class DemoNavbar extends React.Component {
   state = {
