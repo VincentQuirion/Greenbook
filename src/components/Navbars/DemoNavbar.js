@@ -102,7 +102,7 @@ class DemoNavbar extends React.Component {
                 </Nav>
                 <Nav className="align-items-lg-center ml-lg-auto" navbar>
                   <NavItem>
-                    <Button className="btn-sm" color="info" href="/Search/">
+                    <Button className="btn-sm" color="info" href="/Upload/">
                       Upload
                     </Button>
                   </NavItem>
