@@ -39,7 +39,6 @@ class Search extends React.Component {
         document.scrollingElement.scrollTop = 0;
         this.refs.main.scrollTop = 0;
     }
-
     addItem = (e) => {
         // Prevent button click from submitting form
         e.preventDefault();
@@ -90,6 +89,13 @@ class Search extends React.Component {
         }}
 
     render() {
+        const items = [];
+
+        for (var i = 0; i < 10; i++) {
+          items.push(
+            <br/>
+          );
+        }
         return (
             <>
                 <DemoNavbar />
@@ -170,20 +176,41 @@ class Search extends React.Component {
                         <section id="howitworks">
 
                         </section>
+                        {items}
                         <div>
-                        <h1 style={{textAlign: "center", fontSize:"70px"}}>How it works</h1>
-                        <p style={{textAlign: "center", fontSize:"15px", fontWeight: 'bold'}}>
-                            text here
-                        </p>
-                        <br/>
-                    </div>
-                    <div>
-                        <h1 style={{textAlign: "center", fontSize:"70px"}}>Our mission</h1>
-                        <p style={{textAlign: "center", fontSize:"15px", fontWeight: 'bold'}}>
-                            text here
-                        </p>
-                        <br/>
-                    </div>
+                            <h1 style={{textAlign: "center", fontSize:"70px"}}>How it works</h1>
+                            <p style={{textAlign: "left", fontSize:"20px", fontWeight: 'bold', paddingLeft:"10%", paddingRight:"10%"}}> 
+                                <ul>
+                                    <li>
+                                        By using the sign-in button in the navigation bar, you can sign in to your account and access all the personal profile with all your information such as followers and the people who you are following
+                                    </li>
+                                    <li>
+                                        By using the upload button in the navigation bar, where it takes you to the upload page and you can upload any recipes you want to share with the public
+                                    </li>
+                                    <li>
+                                        Besides the upload button, there is the search button where it takes you to the search page (which is also the home page)
+                                    </li>
+                                    <li>
+                                        Inside, the search page you can search any recipes up or use the added ingredient to filter through the recipes
+                                    </li>
+                                    <li>
+                                        At last, you can contact us or get new updates in the social media icons at the bottom of the page
+                                    </li>
+                                </ul>
+                            </p>
+                            <br/>
+                        </div>
+                        <div>
+                            <h1 style={{textAlign: "center", fontSize:"70px"}}>Our mission</h1>
+                            <p style={{textAlign: "left", fontSize:"20px", fontWeight: 'bold', paddingLeft:"10%", paddingRight:"10%"}}>
+                                There are thousands or even millions of tons of food been thrown out each year. 
+                                The massive waster is due to the expiring dates. Sometimes people won’t know how to cook certain ingredients and let them go past their expiring date. 
+                                So, we create this web app to help people to find the recipe for their about to expire food. 
+                                By minimizing the extra food waste, we could minimize the resources that are been used to produce the food which reduces pollution and help the enviroment 
+                            </p>
+                            <br/>
+                        </div>
+                        {items}
                     </section>
                 </main>
                 <SimpleFooter />
