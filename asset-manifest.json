@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/gb-htne-fe-build/static/css/main.dc95c3d2.chunk.css",
+    "main.js": "/gb-htne-fe-build/static/js/main.125ac374.chunk.js",
+    "main.js.map": "/gb-htne-fe-build/static/js/main.125ac374.chunk.js.map",
+    "runtime-main.js": "/gb-htne-fe-build/static/js/runtime-main.2f9650b7.js",
+    "runtime-main.js.map": "/gb-htne-fe-build/static/js/runtime-main.2f9650b7.js.map",
+    "static/js/2.d8c2e0da.chunk.js": "/gb-htne-fe-build/static/js/2.d8c2e0da.chunk.js",
+    "static/js/2.d8c2e0da.chunk.js.map": "/gb-htne-fe-build/static/js/2.d8c2e0da.chunk.js.map",
+    "index.html": "/gb-htne-fe-build/index.html",
+    "static/css/main.dc95c3d2.chunk.css.map": "/gb-htne-fe-build/static/css/main.dc95c3d2.chunk.css.map",
+    "static/js/2.d8c2e0da.chunk.js.LICENSE.txt": "/gb-htne-fe-build/static/js/2.d8c2e0da.chunk.js.LICENSE.txt",
+    "static/media/Greenbook.64ac084a.png": "/gb-htne-fe-build/static/media/Greenbook.64ac084a.png",
+    "static/media/GreenbookWhite.6785cf8f.png": "/gb-htne-fe-build/static/media/GreenbookWhite.6785cf8f.png",
+    "static/media/argon-design-system-react.css.efaf889e.map": "/gb-htne-fe-build/static/media/argon-design-system-react.css.efaf889e.map",
+    "static/media/argon-react-white.e4dd3b41.png": "/gb-htne-fe-build/static/media/argon-react-white.e4dd3b41.png",
+    "static/media/argon-react.png": "/gb-htne-fe-build/static/media/argon-react.128d71d3.png",
+    "static/media/font-awesome.min.css": "/gb-htne-fe-build/static/media/fontawesome-webfont.f691f37e.woff",
+    "static/media/google.eae9aa93.svg": "/gb-htne-fe-build/static/media/google.eae9aa93.svg",
+    "static/media/img-1-1200x1000.df1442cf.jpg": "/gb-htne-fe-build/static/media/img-1-1200x1000.df1442cf.jpg",
+    "static/media/logo.6ce24c58.svg": "/gb-htne-fe-build/static/media/logo.6ce24c58.svg",
+    "static/media/nucleo.css": "/gb-htne-fe-build/static/media/nucleo-icons.d6a66724.ttf",
+    "static/media/team-4-800x800.99c612eb.jpg": "/gb-htne-fe-build/static/media/team-4-800x800.99c612eb.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2f9650b7.js",
+    "static/js/2.d8c2e0da.chunk.js",
+    "static/css/main.dc95c3d2.chunk.css",
+    "static/js/main.125ac374.chunk.js"
+  ]
+}
